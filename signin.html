@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-In Page</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+   
+    <form action="" class="form">
+        <table>
+            <legend>Sign-In Form</legend>
+            <tr>
+                <td>Enter your Email</td>
+                <td>
+                    <input type="email" id="email" placeholder="Enter your Email">
+                </td>
+            </tr>
+            <tr>
+                <td>Enter your Password</td>
+                <td>
+                    <input type="password" name="" id="password" placeholder="Enter your password">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="button" value="Sign in" id="signin">
+                </td>                    <td>
+                   Don't have an account :   <a href="./index.html">Sign Up </a>
+                </td>
+            </tr> 
+         
+        </table>
+    </form>
+
+
+ <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-app.js"></script>
+ <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-auth.js"></script>
+ <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-database.js"></script>
+ <script>
+
+    const firebaseConfig = {
+        apiKey: "AIzaSyCP9qaGpVsPlCxjQ3drrk-aPpiW5myDnZk",
+        authDomain: "test-d75d7.firebaseapp.com",
+        databaseURL: "https://test-d75d7-default-rtdb.firebaseio.com",
+        projectId: "test-d75d7",
+        storageBucket: "test-d75d7.appspot.com",
+        messagingSenderId: "183089637356",
+        appId: "1:183089637356:web:9dd2d27ee7b29eefcc82c9",
+        measurementId: "G-9LCY3MHJFR"
+    };
+
+    firebase.initializeApp(firebaseConfig)
+
+
+ </script>
+ <script src="new.js"></script>
+</body>
+</html>

@@ -1,0 +1,19 @@
+body{
+    background-color: antiquewhite;
+    background-size: 100%;
+}
+legend{
+    margin-top: 10px;
+    font-size: 32px;
+}
+
+table{
+    margin-top: 20px;
+    border-radius: 25px;
+    font-size: 20px;
+}
+.form{
+    background-color: aliceblue;
+    width: 400px;
+    margin: 200px auto;
+}

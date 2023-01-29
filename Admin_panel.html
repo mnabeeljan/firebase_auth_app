@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel</title>
+    <style>
+        td{
+            border: 1px solid black;  
+        }
+    </style>
+</head>
+<body>
+    
+    <h1>Admin panel</h1>
+   <a href="./Add_Product.html"> <button>Add Product </button></a>
+    <table id="product" style="border: 1px solid black;">
+
+        <tr>
+            <th>S.No</th>
+            <th>Name</th>
+            <th>Price</th>
+            <th>Qty</th>
+            <th>Img </th>
+        </tr>
+
+      
+    </table>
+
+    <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-storage.js"></script>
+   
+    <script>
+   
+    const firebaseConfig = {
+        apiKey: "AIzaSyCP9qaGpVsPlCxjQ3drrk-aPpiW5myDnZk",
+        authDomain: "test-d75d7.firebaseapp.com",
+        databaseURL: "https://test-d75d7-default-rtdb.firebaseio.com",
+        projectId: "test-d75d7",
+        storageBucket: "test-d75d7.appspot.com",
+        messagingSenderId: "183089637356",
+        appId: "1:183089637356:web:9dd2d27ee7b29eefcc82c9",
+        measurementId: "G-9LCY3MHJFR"
+    };
+        firebase.initializeApp(firebaseConfig)  
+    </script>
+    
+       <script src="admin_product.js"></script>
+</body>
+</html>
